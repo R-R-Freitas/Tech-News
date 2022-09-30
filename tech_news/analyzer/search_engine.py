@@ -1,6 +1,12 @@
+from tech_news.database import search_news
+from re import compile, IGNORECASE
+
+
 # Requisito 6
 def search_by_title(title):
-    """Seu código deve vir aqui"""
+    news_list = search_news({"title": compile(title, flags=IGNORECASE)})
+    results = [(news["title"], news["url"]) for news in news_list]
+    return(results)
 
 
 # Requisito 7
