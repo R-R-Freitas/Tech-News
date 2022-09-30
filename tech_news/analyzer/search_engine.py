@@ -25,7 +25,9 @@ def search_by_date(date):
 
 # Requisito 8
 def search_by_tag(tag):
-    """Seu código deve vir aqui"""
+    news_list = search_news({"tags": compile(tag, flags=IGNORECASE)})
+    results = [(news["title"], news["url"]) for news in news_list]
+    return results
 
 
 # Requisito 9
