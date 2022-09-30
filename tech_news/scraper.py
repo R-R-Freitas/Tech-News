@@ -85,7 +85,7 @@ def get_tech_news(amount):
         news_urls.extend(scrape_novidades(html_text))
         if len(news_urls) < amount:
             next_page_url = scrape_next_page_link(html_text)
-            fetch(next_page_url)
+            html_text = fetch(next_page_url)
     news = []
     news_urls = news_urls[:amount]
     for news_url in news_urls:
