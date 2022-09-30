@@ -16,4 +16,16 @@ def top_5_news():
 
 # Requisito 11
 def top_5_categories():
-    """Seu código deve vir aqui"""
+    news_list = find_news()
+    categories = [news["category"] for news in news_list]
+    categories_count = dict()
+    for category in categories:
+        if category in categories_count:
+            categories_count[category] += 1
+        else:
+            categories_count[category] = 1
+    rankings = sorted(
+        categories_count,
+        key=lambda category: (-categories_count.get(category), category),
+    )
+    return rankings[:5]
