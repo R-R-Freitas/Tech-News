@@ -23,17 +23,23 @@ options = {
     "4": search_by_category,
     "5": top_5_news,
     "6": top_5_categories,
-    "7": "Encerrando script",
+    "7": "Encerrando script\n",
 }
 
 
 def menu_functions(option):
     if int(option) == 0:
-        print(options[option](int(input(sub_options[option]))))
-    if int(option) in range(1, 5):
-        print(options[option](input(sub_options[option])))
-    if int(option) in range(5, 8):
-        print(options[option])
+        results = options[option](int(input(sub_options[option])))
+        sys.stdout.write(str(results))
+    elif int(option) in range(1, 5):
+        results = options[option](input(sub_options[option]))
+        sys.stdout.write(str(results))
+    elif int(option) in range(5, 7):
+        results = options[option]()
+        sys.stdout.write(str(list(results)))
+    else:
+        results = options[option]
+        sys.stdout.write(results)
 
 
 # Requisito 12
