@@ -15,53 +15,31 @@ sub_options = {
     "3": "Digite a tag:",
     "4": "Digite a categoria:",
 }
-# options = {
-#     "0": get_tech_news,
-#     "1": search_by_title,
-#     "2": search_by_date,
-#     "3": search_by_tag,
-#     "4": search_by_category,
-#     "5": top_5_news,
-#     "6": top_5_categories,
-#     "7": "Encerrando script\n",
-# }
-
-
-def search_options(option):
-    if option == "1":
-        results = search_by_title(input(sub_options[option]))
-        sys.stdout.write(str(results))
-    if option == "2":
-        results = search_by_date(input(sub_options[option]))
-        sys.stdout.write(str(results))
-    if option == "3":
-        results = search_by_tag(input(sub_options[option]))
-        sys.stdout.write(str(results))
-    if option == "4":
-        results = search_by_category(input(sub_options[option]))
-        sys.stdout.write(str(results))
-
-
-def ratings_options(option):
-    if option == "5":
-        results = top_5_news()
-        sys.stdout.write(str(list(results)))
-    elif option == "6":
-        results = top_5_categories()
-        sys.stdout.write(str(list(results)))
+options = {
+    "0": get_tech_news,
+    "1": search_by_title,
+    "2": search_by_date,
+    "3": search_by_tag,
+    "4": search_by_category,
+    "5": top_5_news,
+    "6": top_5_categories,
+    "7": "Encerrando script\n",
+}
 
 
 def menu_functions(option):
     if int(option) == 0:
-        results = get_tech_news(int(input(sub_options[option])))
+        results = options[option](int(input(sub_options[option])))
         sys.stdout.write(str(results))
     elif int(option) in range(1, 5):
-        search_options(option)
+        results = options[option](input(sub_options[option]))
+        sys.stdout.write(str(results))
     elif int(option) in range(5, 7):
-        ratings_options(option)
+        results = options[option]()
+        sys.stdout.write(str(list(results)))
     else:
-        # results = options[option]
-        sys.stdout.write("Encerrando script\n")
+        results = options[option]
+        sys.stdout.write(results)
 
 
 # Requisito 12
