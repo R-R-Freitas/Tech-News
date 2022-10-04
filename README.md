@@ -1,7 +1,7 @@
 ### Este é um projeto desenvolvido para o curso de desenvolvimento web full-stack da Trybe, Módulo Ciência da Computação.  
   
 A aplicação usa técnicas de raspagem de dados para buscar notícias do [blog da Trybe](https://blog.betrybe.com) e analisa os dados dando algumas opções de relatórios.  
-Este foi meu terceiro projeto em Python e o primeiro utilizando raspagem de dados. Para isso, entendi como funciona a busca por dados utlizando a library **request** e o tratamento dos dados com **parsel**, além de uma introdução ao uso do **pymongo**.  
+Este foi meu terceiro projeto em Python e o primeiro utilizando raspagem de dados. Para isso, entendi como funciona a busca por dados utlizando a library **requests** e o tratamento dos dados com **parsel**, além de uma introdução ao uso do **pymongo**.  
   
 ## Tecnologias utilizadas:  
 <details>  
