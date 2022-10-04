@@ -1,10 +1,39 @@
-# 🚧 README em construção 🚧
-<!-- Olá, Tryber!
-Esse é apenas um arquivo inicial para o README do seu projeto.
-É essencial que você preencha esse documento por conta própria, ok?
-Não deixe de usar nossas dicas de escrita de README de projetos, e deixe sua criatividade brilhar!
-⚠️ IMPORTANTE: você precisa deixar nítido:
-- quais arquivos/pastas foram desenvolvidos por você; 
-- quais arquivos/pastas foram desenvolvidos por outra pessoa estudante;
-- quais arquivos/pastas foram desenvolvidos pela Trybe.
--->
+### Este é um projeto desenvolvido para o curso de desenvolvimento web full-stack da Trybe, Módulo Ciência da Computação.  
+  
+A aplicação usa técnicas de raspagem de dados para buscar notícias do [blog da Trybe](https://blog.betrybe.com) e analisa os dados dando algumas opções de relatórios.  
+Este foi meu terceiro projeto em Python e o primeiro utilizando raspagem de dados. Para isso, entendi como funciona a busca por dados utlizando a library **request** e o tratamento dos dados com **parsel**, além de uma introdução ao uso do **pymongo**.  
+  
+## Tecnologias utilizadas:  
+<details>  
+  <summary>Clique para expandir</summary>  
+  
+* Python;  
+* Request;  
+* Parsel;  
+* Pymongo;    
+
+</details>  
+  
+## Rodando a aplicação
+  
+<details>  
+  <summary>Clique para expandir</summary>
+  Você pode rodar a aplicação na sua máquina através do terminal, na pasta onde será instalada:  
+  
+```
+git clone git@github.com:R-R-Freitas/Tech-News.git
+cd Tech-News  
+pip install .  
+python3 -m pip install -r dev-requirements.txt  
+tech-news-analyzer  
+```  
+</details>
+  
+#### Ponto de partida do desenvolvimento:  
+Ou: créditos à participação da Trybe no projeto  
+<details>  
+  <summary>Clique para expandir</summary>  
+  
+  A Trybe disponibilizou um projeto parcialmente pronto. O "Initial Commit" deste repositório contém os arquivos e códigos de autoria da Trybe.  
+    
+</details>  
