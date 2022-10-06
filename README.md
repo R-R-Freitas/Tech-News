@@ -7,10 +7,10 @@ Este foi meu terceiro projeto em Python e o primeiro utilizando raspagem de dado
 <details>  
   <summary>Clique para expandir</summary>  
   
-* Python;  
-* Request;  
-* Parsel;  
-* Pymongo;    
+* [Python 3](https://docs.python.org/3/);  
+* [requests](https://requests.readthedocs.io/en/latest/);  
+* [parsel](https://parsel.readthedocs.io/en/latest/);  
+* [pymongo](https://pymongo.readthedocs.io/en/stable/);    
 
 </details>  
   
